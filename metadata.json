@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Image Content Generator",
+  "description": "Generate unique image content by combining text ideas, character and face photos, and stylistic preferences using the Gemini API.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
