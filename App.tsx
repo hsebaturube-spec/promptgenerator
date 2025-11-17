@@ -305,11 +305,18 @@ const App: React.FC = () => {
                 <p>Generating your masterpiece...</p>
               </div>
             ) : generatedImageURL ? (
-              <img
-                src={generatedImageURL}
-                alt="Generated Content"
-                className="max-w-full max-h-full object-contain rounded-md"
-              />
+              <div>
+                <img
+                  src={generatedImageURL}
+                  alt="Generated Content"
+                  className="max-w-full max-h-full object-contain rounded-md mb-4"
+                />
+                <div className="text-sm text-gray-600 dark:text-gray-300 mb-4 space-y-1">
+                  <p><strong>Aspect Ratio:</strong> {selectedImageAspectRatio}</p>
+                  <p><strong>Style:</strong> {selectedImageStyle}</p>
+                  <p><strong>Character Position:</strong> {selectedCharacterPosition}</p>
+                </div>
+              </div>
             ) : (
               <img
                 src={PLACEHOLDER_IMAGE_URL}
